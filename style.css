@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Rubik:wght@300;400;500&display=swap');
+
+
+/* 
+
+font-family: 'Roboto', sans-serif;
+font-family: 'Rubik', sans-serif; 
+
+*/
+
+
+
+.btm{
+    padding: 6px 46px;
+    background: #e83b3e;
+    color: white;
+    border: none;
+    position: relative;
+    z-index: 1;
+}
+.btm:hover{
+    color: white;
+}
+.btm::after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 5px;
+    background: #000;
+    color: white;
+    z-index: -1;
+    transition: .5s;
+}
+.btm:hover::after{
+    width: 100%;
+
+}
+
+.header-menu {}
+.header-menu li{
+    list-style: none;
+    position: relative;
+}
+.header-menu li a{
+    text-decoration: none;
+    padding: 10px 15px ;
+    color: black;
+    font-weight: 700;
+}
+.header-menu li:hover > a{
+    color: #e83b3e;
+}
+i.fa-solid.fa-chevron-down {
+    font-size: 12px;
+}
+.header-menu ul li a{
+    transition: .2s;
+}
+.header-menu ul li a:hover{
+    color: #e83b3e;
+    font-size: 18px;
+}
+
+.header-menu li ul{
+    position: absolute;
+    top: 300%;
+    left: 0;
+    padding: 0px;
+    width: 200px;
+    box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 10%);
+    background: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+.header-menu li ul li{
+    list-style: none;
+    padding: 10px 0;
+}
+.header-menu li ul li a{
+    padding: 10px 20px;
+}
+.header-menu li ul li a:hover{}
+.header-menu li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    top: 200%;
+}
+
+.header-right{}
+.header-right .header-right-search{
+    font-size: 20px;
+    border-right: 1px solid rgb(79, 86, 87);
+}
+.header-right-contact{
+    width: 250px;
+}
+.header-right-contact-icon {
+    font-size: 25px;
+    margin-top: 4px;
+    color: #e83b3e;
+    padding-left: 15px;
+}
+.header-right .header-right-contact{}
+.header-right .header-right-button{}
+
+
+
+/* banner  */
+.bannre{
+    background: url(./main-banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    position: sticky;
+}
+.banner-contain h1{
+    font-weight: 800;
+    font-size: 50px;
+    font-family: 'Rubik', sans-serif; 
+}
+p{
+    font-size: 18px;
+    line-height: 1.8rem;
+    color: #606060;
+    font-family: 'Roboto', sans-serif;
+}
+
+.banner-icon{}
+.banner-icon ul {}
+.banner-icon ul li{
+    list-style: none;
+
+}
+.banner-icon ul li span{
+    position: relative;
+}
+.banner-icon ul li span::after{
+    content: "";
+    position: absolute;
+    top: 56%;
+    left: 107%;
+    height: 1px ;
+    width: 50%;
+    background: #000;
+
+}
+.banner-icon ul li a{
+    color: #000;
+    padding: 0 10px;
+    transition: .5s;
+}
+.banner-icon ul li a:hover{
+    color: #e83b3e;
+}
